@@ -13,8 +13,8 @@ import static org.openmrs.module.o3forms.O3FormsConstants.DEFAULT_FORMAT;
 import static org.openmrs.module.o3forms.O3FormsWebConstants.REST_NAMESPACE;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import org.openmrs.api.context.Context;
 import org.openmrs.module.o3forms.api.O3FormsService;

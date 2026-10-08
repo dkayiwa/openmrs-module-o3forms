@@ -41,8 +41,8 @@ public class O3FormsResourceController extends BaseRestController {
 	@RequestMapping(method = GET)
 	@ResponseBody
 	public SimpleObject getO3Form(@PathVariable("formNameOrUuid") String formNameOrUuid,
-	        @RequestParam(defaultValue = "true") String includeConceptReferences, HttpServletRequest request,
-	        HttpServletResponse response) {
+	        @RequestParam(name = "includeConceptReferences", defaultValue = "true") String includeConceptReferences,
+	        HttpServletRequest request, HttpServletResponse response) {
 		// no cache actually means must revalidate; intended to trigger 304s and If-None-Matched when requesting forms
 		response.setHeader("Cache-Control", "no-cache; private");
 		
